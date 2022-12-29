@@ -70,7 +70,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full px-20 grid grid-cols-6 gap-6 mt-4 mb-5">
+          <div className="w-full px-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6  gap-6 mt-4 mb-5">
             <RoomCard image={"/1.webp"} />
             <RoomCard image={"/2.webp"} />
             <RoomCard image={"/4.webp"} />
