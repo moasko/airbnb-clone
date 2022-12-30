@@ -104,8 +104,9 @@ export default function Home() {
             <RoomCard />
           </div>
         </div>
-        <footer className="w-full flex justify-between px-20 py-4  bg-white border-t sticky bottom-0 z-50">
-          <div className="text-[14px]">
+        <footer className="w-full hidden lg:block px-20 py-4 bg-white border-t sticky bottom-0 z-50">
+          <div className="w-full flex justify-between">
+            <div className="text-[14px]">
             <span>© 2022 Airbnb, Inc.</span>
             <span className="mx-3">·</span>
             <Link href={"#"}>Confidentialité</Link>
@@ -125,6 +126,8 @@ export default function Home() {
               Français (FR)
             </Link>
           </div>
+          </div>
+          
         </footer>
       </main>
     </>
