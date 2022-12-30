@@ -17,25 +17,30 @@ export default function Home() {
           <div className="w-full sticky top-0 z-50 bg-white shadow">
             <Header />
             <div className="w-full">
-              <div className="w-full items-center flex-row flex px-20 pt-5">
-                <div className="flex w-full relative justify-between">
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
-                  <IconsMenu />
+              <div className="w-full items-center flex-row flex 2xl:px-20 px-5 pt-5">
+                <div className="w-full overflow-x-auto relative">
+                  <div className="w-max space-x-11">
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                    <IconsMenu />
+                  </div>
 
-                  <div className="absolute w-12 flex justify-center items-center bg-gradient-to-l from-white via-white h-full right-0">
+                  {/* <div className="absolute w-12 flex justify-center items-center bg-gradient-to-l from-white via-white h-full right-0">
                     <div className="w-[28px] mb-5 h-[28px] flex items-center justify-center bg-white border rounded-full">
                       <Image
                         src={"/nav-arrow-right.svg"}
@@ -55,22 +60,24 @@ export default function Home() {
                         alt="flet"
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
-                <div className="flex hover:shadow space-x-2 border px-5 py-3 mb-3 ml-5 rounded-xl">
-                  <Image
-                    src={"/filter.png"}
-                    width={20}
-                    height={20}
-                    alt="flet"
-                  />{" "}
-                  <span>Filtres</span>
+                <div className="hidden lg:block mb-3 ml-5">
+                  <div className="flex hover:shadow space-x-2 border px-5 py-3 rounded-xl">
+                    <Image
+                      src={"/filter.png"}
+                      width={20}
+                      height={20}
+                      alt="flet"
+                    />{" "}
+                    <span>Filtres</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="w-full px-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6  gap-6 mt-4 mb-5">
+          <div className="w-full 2xl:px-20 px-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6 mt-4 mb-5">
             <RoomCard image={"/1.webp"} />
             <RoomCard image={"/2.webp"} />
             <RoomCard image={"/4.webp"} />
@@ -101,29 +108,17 @@ export default function Home() {
           <div className="text-[14px]">
             <span>© 2022 Airbnb, Inc.</span>
             <span className="mx-3">·</span>
-            <Link href={"#"}>
-              Confidentialité
-            </Link>
+            <Link href={"#"}>Confidentialité</Link>
             <span className="mx-3">·</span>
-            <Link href={"#"}>
-              Conditions générales
-            </Link>
+            <Link href={"#"}>Conditions générales</Link>
             <span className="mx-3">·</span>
-            <Link href={"#"}>
-              Plan du site
-            </Link>
+            <Link href={"#"}>Plan du site</Link>
             <span className="mx-3">·</span>
-            <Link href={"#"}>
-              Fonctionnement du site
-            </Link>
+            <Link href={"#"}>Fonctionnement du site</Link>
             <span className="mx-3">·</span>
-            <Link href={"#"}>
-              Infos sur l entreprise
-            </Link>
+            <Link href={"#"}>Infos sur l entreprise</Link>
             <span className="mx-3">·</span>
-            <Link href={"#"}>
-              Destinations
-            </Link>
+            <Link href={"#"}>Destinations</Link>
           </div>
           <div>
             <Link className="font-semibold" href={"#"}>
