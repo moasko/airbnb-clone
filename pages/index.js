@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Logo, RoomCard, IconsMenu, Header } from "../components";
+import RoomsList from "../components/elements/roomsList";
 
 export default function Home() {
   return (
@@ -77,32 +78,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full 2xl:px-20 px-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6 mt-4 mb-5">
-            <RoomCard image={"/1.webp"} />
-            <RoomCard image={"/2.webp"} />
-            <RoomCard image={"/4.webp"} />
-            <RoomCard image={"/5.webp"} />
-            <RoomCard image={"/6.webp"} />
-            <RoomCard image={"/7.webp"} />
-            <RoomCard image={"/8.webp"} />
-            <RoomCard image={"/9.webp"} />
-            <RoomCard image={"/10.webp"} />
-            <RoomCard image={"/11.webp"} />
-            <RoomCard image={"/12.webp"} />
-            <RoomCard image={"/14.webp"} />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-            <RoomCard />
-          </div>
+      <RoomsList/>
         </div>
         <footer className="w-full hidden lg:block px-20 py-4 bg-white border-t sticky bottom-0 z-50">
           <div className="w-full flex justify-between">
