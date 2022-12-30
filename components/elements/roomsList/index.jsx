@@ -1,19 +1,27 @@
 import React,{useState,useEffect} from 'react'
-import { get_all_rooms } from '../../../backend/rooms'
+import { faker } from '@faker-js/faker/locale/fr';
 import RoomCard from '../../cellules/roomCard'
 
 function RoomsList() {
  const [rooms,setRooms]=useState([])
 
-const allRoomsc= ()=>{
-get_all_rooms()
-.then(data=>{
-    setRooms(data)
-})
-}
+ function generateListing() {
+    const listing = {
+      id: faker.datatype.uuid(),
+      name: faker.lorem.words(),
+      picture_url: `${faker.image.city()}?random=${Math.round(Math.random() * 1000)}?width=271?height=257`,
+      price: faker.commerce.price(),
+      location: faker.address.city(),
+    };
+    return listing;
+  }
+
 
 useEffect(()=>{
-    allRoomsc()
+    const createUsers = (numUsers = 10) => {
+        return Array.from({length: numUsers}, generateListing);
+    }
+    setRooms(createUsers(30))
 },[])
 
   return (
