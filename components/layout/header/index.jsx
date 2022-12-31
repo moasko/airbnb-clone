@@ -2,10 +2,13 @@ import Image from "next/image";
 import React from "react";
 import Logo from "../../atoms/logo";
 
-function Header() {
+function Header(props) {
+
+  const {headPadding=false} = props
+
   return (
     <div className="border-b border-b-slate-200 w-full">
-      <div className="flex 2xl:px-20 px-5 items-center justify-between">
+      <div className={`flex 2xl:px-${headPadding?"96":"20"} px-5 items-center justify-between`}>
         <div className="hidden lg:block">
              <Logo />
         </div>
@@ -44,8 +47,6 @@ function Header() {
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Logo, RoomCard, IconsMenu, Header } from "../components";
+import { IconsMenu, Header } from "../components";
 import RoomsList from "../components/elements/roomsList";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <main className="h-[100vh] relative">
         <div className="flex w-full flex-col justify-center items-center">
           <div className="w-full sticky top-0 z-50 bg-white shadow">
-            <Header />
+            <Header/>
             <div className="w-full">
               <div className="w-full items-center flex-row flex 2xl:px-20 px-5 pt-5">
                 <div className="w-full overflow-x-auto relative">
