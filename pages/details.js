@@ -25,24 +25,80 @@ function Details() {
 
         <div className="overflow-hidden rounded-lg flex flex-row  w-full h-[calc(60vh_-_64px)] mt-10">
           <div className="w-1/2 h-full relative">
-            <Image className="object-fill transition hover:scale-125" alt="vide" fill src={"/2.webp"} />
+            <Image
+              className="object-fill transition hover:scale-125"
+              alt="vide"
+              fill
+              src={"/2.webp"}
+            />
           </div>
 
           <div className="w-1/2 grid grid-cols-2 grid-rows-2 gap-2 pl-2 h-full caret-lime-500">
             <div className="relative overflow-hidden">
-              <Image className="object-fill transition hover:scale-125" alt="vide" fill src={"/1.webp"} />
+              <Image
+                className="object-fill transition hover:scale-125"
+                alt="vide"
+                fill
+                src={"/1.webp"}
+              />
             </div>
             <div className="relative overflow-hidden">
-              <Image className="object-fill transition hover:scale-125" alt="vide" fill src={"/2.webp"} />
+              <Image
+                className="object-fill transition hover:scale-125"
+                alt="vide"
+                fill
+                src={"/2.webp"}
+              />
             </div>
             <div className="relative overflow-hidden">
-              <Image className="object-fill transition hover:scale-125" alt="vide" fill src={"/3.webp"} />
+              <Image
+                className="object-fill transition hover:scale-125"
+                alt="vide"
+                fill
+                src={"/3.webp"}
+              />
             </div>
             <div className="relative overflow-hidden">
-              <Image className="object-fill transition hover:scale-125" alt="vide" fill src={"/4.webp"} />
+              <Image
+                className="object-fill transition hover:scale-125"
+                alt="vide"
+                fill
+                src={"/4.webp"}
+              />
             </div>
           </div>
         </div>
+
+        <div className="w-full mt-10 flex flex-row">
+          <div className="w-2/3 pr-20">
+            <div className="w-full border-b flex justify-between items-center border-b-slate-200 pb-5">
+              <div>
+                <h2 className="font-semibold text-2xl">
+                  Logement entier : villa ⸱ Chez Bookiply
+                </h2>
+                <span>
+                  6 voyageurs 3 . chambres . 4 lits . 3 salles de bain
+                </span>
+              </div>
+              <div className=" w-16 h-16 rounded-full overflow-hidden relative">
+                <Image src={"/1.webp"} fill alt="kj" />
+              </div>
+            </div>
+
+            <div>
+                <div>
+                    <div></div>
+                    <div>
+                        <h3>Procédure d arrivée irréprochable</h3>
+                        <p>100 % des voyageurs ont attribué 5 étoiles à la procédure d arrivée.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div className="w-1/3 h-96 bg-red-500"></div>
+        </div>
+
+
       </main>
     </div>
   );
