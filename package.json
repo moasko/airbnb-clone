@@ -6,17 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate": "npx prisma migrate dev --name init"
   },
   "dependencies": {
     "@next/font": "13.1.1",
+    "@prisma/client": "^4.13.0",
     "axios": "^1.2.2",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
     "faker": "^6.6.6",
     "next": "13.1.1",
+    "prisma": "^4.13.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
