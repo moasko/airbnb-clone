@@ -2,23 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Header } from "../components";
-
+import { RxShare2 } from "react-icons/rx"
+import { AiOutlineHeart } from "react-icons/ai"
 function Details() {
   return (
     <div>
-      <Header headPadding={true} />
+      <Header headPadding={ true } />
       <main className="2xl:px-96 px-5">
         <div className="flex justify-between flex-col mt-5">
           <h1 className="text-3xl font-semibold">Casa Acantilado</h1>
           <div className="flex justify-between mt-3">
             <div>
               <span>
-                4,6: <Link href={"#"}>5 commentaires</Link>
+                4,6: <Link href={ "#" }>5 commentaires</Link>
               </span>
             </div>
-            <div className=" space-x-5">
-              <Link href={"#"}>Partager</Link>
-              <Link href={"#"}>Enregistre</Link>
+            <div className="space-x-4 flex">
+              <Link className="flex items-center px-3 py-2 rounded-xl hover:bg-slate-100" href={ "#" }><RxShare2 className="mr-2" size={ 16 } /> Partager</Link>
+              <Link className="flex items-center px-3 py-2 rounded-xl hover:bg-slate-100" href={ "#" }><AiOutlineHeart className="mr-2" size={ 16 } /> Enregistre</Link>
             </div>
           </div>
         </div>
@@ -29,7 +30,7 @@ function Details() {
               className="object-fill transition hover:scale-125"
               alt="vide"
               fill
-              src={"/2.webp"}
+              src={ "/2.webp" }
             />
           </div>
 
@@ -39,7 +40,7 @@ function Details() {
                 className="object-fill transition hover:scale-125"
                 alt="vide"
                 fill
-                src={"/1.webp"}
+                src={ "/1.webp" }
               />
             </div>
             <div className="relative overflow-hidden">
@@ -47,7 +48,7 @@ function Details() {
                 className="object-fill transition hover:scale-125"
                 alt="vide"
                 fill
-                src={"/2.webp"}
+                src={ "/2.webp" }
               />
             </div>
             <div className="relative overflow-hidden">
@@ -55,7 +56,7 @@ function Details() {
                 className="object-fill transition hover:scale-125"
                 alt="vide"
                 fill
-                src={"/3.webp"}
+                src={ "/3.webp" }
               />
             </div>
             <div className="relative overflow-hidden">
@@ -63,7 +64,7 @@ function Details() {
                 className="object-fill transition hover:scale-125"
                 alt="vide"
                 fill
-                src={"/4.webp"}
+                src={ "/4.webp" }
               />
             </div>
           </div>
@@ -81,18 +82,18 @@ function Details() {
                 </span>
               </div>
               <div className=" w-16 h-16 rounded-full overflow-hidden relative">
-                <Image src={"/1.webp"} fill alt="kj" />
+                <Image src={ "/1.webp" } fill alt="kj" />
               </div>
             </div>
 
             <div>
+              <div>
+                <div></div>
                 <div>
-                    <div></div>
-                    <div>
-                        <h3>Procédure d arrivée irréprochable</h3>
-                        <p>100 % des voyageurs ont attribué 5 étoiles à la procédure d arrivée.</p>
-                    </div>
+                  <h3>Procédure d arrivée irréprochable</h3>
+                  <p>100 % des voyageurs ont attribué 5 étoiles à la procédure d arrivée.</p>
                 </div>
+              </div>
             </div>
           </div>
           <div className="w-1/3 h-96 bg-red-500"></div>
